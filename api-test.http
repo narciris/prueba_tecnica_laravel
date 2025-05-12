@@ -1,0 +1,43 @@
+
+### crud entidades
+### INDEX METHOD
+GET http://localhost:8000/api/entidades
+Accept: application/json
+Content-Type: application/json
+
+### STORE METHOD
+
+POST http://localhost:8000/api/entidades
+Accept: application/json
+Content-Type:  application/json
+
+{
+    "nombre": "narciris Mena",
+    "nit": "103257896",
+    "direccion": "cra 100 barrio colon",
+    "telefono": "1254511",
+    "email": "narciris@example.com"
+}
+
+### SHOW METHOD
+
+GET http://localhost:8000/api/entidades/1
+Accept: application/json
+Content-Type: application/json
+
+
+### UPDATE METHOD
+
+PATCH http://localhost:8000/api/entidades/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "telefono": "1235689"
+}
+
+### DELETE METHOD
+
+DELETE http://localhost:8000/api/entidades/1
+Accept: application/json
+Content-Type: application/json
