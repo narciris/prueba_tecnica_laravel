@@ -41,3 +41,50 @@ Content-Type: application/json
 DELETE http://localhost:8000/api/entidades/1
 Accept: application/json
 Content-Type: application/json
+
+### crud contactos
+
+GET http://localhost:8000/api/contactos
+Accept: application/json
+Content-Type: application/json
+
+### CREAR UN CONTACTO
+
+POST http://localhost:8000/api/contactos
+Accept: application/json
+Content-Type: application/json
+
+{
+    "nombre": "Juan Pérez",
+    "email": "juan.m@example.com",
+    "telefono": "1011121314",
+    "direccion": "cra 45",
+    "asunto": "Consulta sobre producto",
+    "notas": "Necesita más información sobre el producto",
+    "fecha_nacimiento": "1985-12-15",
+    "creado_por": 1,
+    "entidad_id": 5,
+    "identificacion": "1235448"
+}
+
+### contacto por id
+
+GET http://localhost:8000/api/contactos/1
+Accept: application/json
+Content-Type: application/json
+
+### actualizar contacto
+
+PUT http://localhost:8000/api/contactos/1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "notas": "skdfjbdskgbndgkjndgk"
+}
+
+### borrar contacto
+
+DELETE http://localhost:8000/api/contactos/3
+Accept: application/json
+Content-Type: application/json

@@ -18,4 +18,9 @@ class Entidad extends Model
         'email'
 
     ];
+
+    public function contact()
+    {
+        return $this->hasMany(Contacto::class);
+    }
 }
